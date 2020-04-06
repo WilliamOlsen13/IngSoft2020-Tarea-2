@@ -78,4 +78,9 @@ public class Usuario{
 	public int getSaldo(){
 		return saldo;
 	}
+
+	@Override
+	public boolean equals(Object obj){
+		return (((Usuario)obj).getCedula() == this.getCedula());
+	}
 }
